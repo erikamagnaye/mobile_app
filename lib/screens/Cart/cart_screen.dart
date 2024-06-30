@@ -1,5 +1,5 @@
-import 'package:ecommerce_mobile_app/Provider/add_to_cart_provider.dart';
-import 'package:ecommerce_mobile_app/screens/Cart/check_out.dart';
+import 'package:mobile_app/Provider/add_to_cart_provider.dart';
+import 'package:mobile_app/screens/Cart/check_out.dart';
 import 'package:flutter/material.dart';
 import '../../constants.dart';
 
@@ -33,7 +33,7 @@ class _CartScreenState extends State<CartScreen> {
 
     return Scaffold(
       backgroundColor: kcontentColor,
-      bottomSheet: CheckOutBox(),
+      bottomSheet: const CheckOutBox(),
       body: SafeArea(
 
           child: Column(

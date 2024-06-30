@@ -1,6 +1,6 @@
-import 'package:ecommerce_mobile_app/Provider/add_to_cart_provider.dart';
-import 'package:ecommerce_mobile_app/constants.dart';
-import 'package:ecommerce_mobile_app/models/product_model.dart';
+import 'package:mobile_app/Provider/add_to_cart_provider.dart';
+import 'package:mobile_app/constants.dart';
+import 'package:mobile_app/models/product_model.dart';
 import 'package:flutter/material.dart';
 
 class AddToCart extends StatefulWidget {
