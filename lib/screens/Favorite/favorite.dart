@@ -76,7 +76,7 @@ class _FavoriteState extends State<Favorite> {
                                     ),
                                     const SizedBox(height: 10),
                                     Text(
-                                      "\$${favoriteItems.price}",
+                                      "₱ ${favoriteItems.price}",
                                       style: const TextStyle(
                                         fontWeight: FontWeight.bold,
                                         fontSize: 14,

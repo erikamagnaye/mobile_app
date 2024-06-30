@@ -60,7 +60,7 @@ class ProductCard extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
                     Text(
-                      "\$${product.price}",
+                      "₱ ${product.price}",
                       style: const TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 17,
