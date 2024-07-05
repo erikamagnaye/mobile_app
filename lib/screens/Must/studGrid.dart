@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:mobile_app/models/product_model.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
+import 'package:mobile_app/models/product_model.dart';
 import '../../constants.dart';
 
-class ProductGridScreen extends StatelessWidget {
-  const ProductGridScreen({super.key});
+class studGrid extends StatelessWidget {
+  const studGrid({Key? key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: kcontentColor,
+      backgroundColor: Colors.white,
       appBar: AppBar(
         backgroundColor: kcontentColor,
         title: const Text(
@@ -39,14 +39,17 @@ class ProductGridScreen extends StatelessWidget {
                     padding: const EdgeInsets.all(8.0),
                     child: Text(
                       product.title,
-                      style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                      style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold),
                     ),
                   ),
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 8.0),
-                    child: Text(
-                      '₱ ${product.price}',
-                      style: TextStyle(fontSize: 14, color: Colors.grey),
+                    child: Padding(
+                      padding: const EdgeInsets.only(bottom: 10.0), // Add margin top here
+                      child: Text(
+                        '₱ ${product.price}',
+                        style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold),
+                      ),
                     ),
                   ),
                 ],

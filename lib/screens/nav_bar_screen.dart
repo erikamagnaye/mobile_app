@@ -4,7 +4,7 @@ import 'package:mobile_app/screens/Home/home_screen.dart';
 import 'package:mobile_app/screens/Profile/profile.dart';
 import 'package:flutter/material.dart';
 import 'Favorite/favorite.dart';
-import 'ProductGridScreen.dart'; // Import the new screen
+import 'Must/studGrid.dart'; // Import the new screen
 
 class BottomNavBar extends StatefulWidget {
   const BottomNavBar({super.key});
@@ -16,7 +16,7 @@ class BottomNavBar extends StatefulWidget {
 class _BottomNavBarState extends State<BottomNavBar> {
   int currentIndex = 2;
   List screens = const [
-    ProductGridScreen(), // Use the new screen here
+    studGrid (),
     Favorite(),
     HomeScreen(),
     CartScreen(),
